@@ -12,10 +12,10 @@ Use Bootstrap's powerful mobile-first flexbox grid to build layouts of all shape
 `npm install bootstrap-grid-webcomponents -S`
 
 ### Importing the web components:
-import 'bootstrap-grid-webcomponents'
+`import '/node_modules/bootstrap-grid-webcomponents/dist/bootstrap-grid-webcomponents/bootstrap-grid-webcomponents.esm.js'`
 
 ### Using the web components:
-<bs-row>
+```<bs-row>
   <bs-col>1 of 2</bs-col>
   <bs-col>2 of 2</bs-col>
-</bs-row>
+</bs-row>```
