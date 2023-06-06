@@ -1,0 +1,74 @@
+﻿:root {
+
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-size: 1.6rem;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue";
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-sm);
+  margin-bottom: var(--gap);
+  padding: var(--gap-xs) var(--gap);
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15), inset 0 -1px 0 rgba(255,255,255,0.15);
+  background-color: rgba(var(--bd-violet-rgb), 0.05);
+}
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 500;
+}
+h1 {
+  font-size: 2.2rem;
+  color: #482292;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2.5rem;
+}
+h4 {
+  font-size: 2rem;
+}
+
+a {
+  display: inline-block;
+  color: rgb(var(--bd-violet-rgb));
+}
+a::after {
+  content: " ↗️";
+}
+
+footer,
+main {
+  max-width: 100rem;
+  margin: auto;
+}
+main {
+  padding: 0 var(--gap);
+}
+footer {
+  font-size: 1.4rem;
+  padding: var(--gap);
+}
+main > * + * {
+  margin-top: var(--gap);
+}

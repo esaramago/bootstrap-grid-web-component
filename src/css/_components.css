@@ -1,0 +1,13 @@
+﻿:root {
+
+}
+.c-stack > * + * {
+  margin-top: var(--gap);
+}
+.c-stack--sm > * + * {
+  margin-top: var(--gap-sm);
+}
+
+.c-logo {
+  height: 4rem;
+}

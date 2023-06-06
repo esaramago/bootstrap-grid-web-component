@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/bootstrap-grid-webcomponents.esm.js"></script>
+    <script nomodule src="/build/bootstrap-grid-webcomponents.js"></script>
+    <link rel="shortcut icon" href="/build/images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/build/bootstrap-grid-webcomponents.css">
+  </head>
+  <body>
+
+    <header>
+      <img src="build/images/logo.svg" alt="Bootstrap Grid Web Component" class="c-logo">
+      <h1>Bootstrap Grid Web Component</h1>
+    </header>
+
+    <main>
+
+      <section class="c-stack--sm">
+
+        <h2>Bootstrap's grid system</h2>
+
+        <p>Use Bootstrap's powerful mobile-first flexbox grid to build layouts of all shapes and sizes thanks to a twelve column system, six default responsive tiers and dozens of predefined attributes.</p>
+        <a href="https://getbootstrap.com/docs/5.3/layout/grid/" target="_blank">More info at Bootstrap website</a>
+      </section>
+
+      <hr>
+
+      <div class="example c-stack">
+
+        <h3>Auto-layout columns</h3>
+
+        <bswc-section
+          heading="Equal-width"
+          slug="equal-width"
+        >
+          <bs-row>
+            <bs-col>1 of 2</bs-col>
+            <bs-col>2 of 2</bs-col>
+          </bs-row>
+          <bs-row>
+            <bs-col>1 of 3</bs-col>
+            <bs-col>2 of 3</bs-col>
+            <bs-col>3 of 3</bs-col>
+          </bs-row>
+        </bswc-section>
+
+        <bswc-section
+          heading="Setting one column width"
+          slug="setting-one-column-width"
+        >
+          <bs-row>
+            <bs-col>1 of 3</bs-col>
+            <bs-col col="6">2 of 3 (wider)</bs-col>
+            <bs-col>3 of 3</bs-col>
+          </bs-row>
+          <bs-row>
+            <bs-col>1 of 3</bs-col>
+            <bs-col col="5">2 of 3 (wider)</bs-col>
+            <bs-col>3 of 3</bs-col>
+          </bs-row>
+        </bswc-section>
+
+      </div>
+
+      <hr>
+
+    </main>
+
+    <footer>
+      <bs-row justify="center">
+        <bs-col col="auto">Made by <a href="https://github.com/esaramago" target="_blank">Emanuel Saramago</a></bs-col>
+      </bs-row>
+    </footer>
+  </body>
+</html>
