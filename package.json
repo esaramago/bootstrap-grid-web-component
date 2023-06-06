@@ -1,7 +1,8 @@
 {
   "name": "bootstrap-grid-webcomponents",
-  "version": "0.0.1",
-  "description": "Stencil Component Starter",
+  "version": "0.1.0",
+  "description": "Bootstrap Grid System Web Component",
+  "author": "esaramago",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
   "es2015": "dist/esm/index.mjs",
@@ -38,5 +39,10 @@
     "jest-cli": "^27.5.1",
     "puppeteer": "^19.5.2"
   },
-  "license": "MIT"
+  "keywords": ["Bootstrap", "webcomponents", "grid"],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/esaramago/bootstrap-grid-web-component/issues",
+    "email": "e.saramago@outlook.com"
+  }
 }
