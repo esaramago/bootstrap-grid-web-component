@@ -48,7 +48,9 @@ export class BSWCSection {
 
           <div class="section__example">
             <div class="section__example-title">Example</div>
-            <slot></slot>
+            <div class="section__example-content">
+              <slot></slot>
+            </div>
           </div>
 
           <pre class="section__code">
@@ -61,7 +63,9 @@ export class BSWCSection {
           </pre>
         </div>
 
-        <a href={`https://getbootstrap.com/docs/5.3/layout/grid/#${this.slug}`} target="_blank" class="section__link">More info about {this.heading} at Bootstrap website</a>
+        {this.slug ?
+          <a href={`https://getbootstrap.com/docs/5.3/layout/grid/#${this.slug}`} target="_blank" class="section__link">More info about {this.heading} at Bootstrap website</a>
+        : ''}
       </section>
     )
   }

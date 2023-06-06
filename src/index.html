@@ -22,20 +22,56 @@
 
       <section class="c-stack--sm">
 
-        <h2>Bootstrap's grid system</h2>
+        <h2>Bootstrap's grid system via web components</h2>
 
         <p>Use Bootstrap's powerful mobile-first flexbox grid to build layouts of all shapes and sizes thanks to a twelve column system, six default responsive tiers and dozens of predefined attributes.</p>
-        <a href="https://getbootstrap.com/docs/5.3/layout/grid/" target="_blank">More info at Bootstrap website</a>
+        <p>More info about <a href="https://developer.mozilla.org/pt-BR/docs/Web/API/Web_components" target="_blank">Web components</a>?</p>
+        <p>More info about Bootstrap Grid System at <a href="https://getbootstrap.com/docs/5.3/layout/grid/" target="_blank">Bootstrap's website</a>.</p>
+        <p>Check out the code on <a href="https://github.com/esaramago/bootstrap-grid-web-component">GitHub</a>.</p>
+      </section>
+
+      <hr>
+
+      <section class="c-stack--sm">
+
+        <h2>Getting started</h2>
+
+        <p>Installing via npm:</p>
+
+        <code class="c-code">
+          <div class="c-code__title">Terminal</div>
+          npm install bootstrap-grid-webcomponents -S
+        </code>
+
+        <p>Importing the web components:</p>
+
+        <code class="c-code">
+          <div class="c-code__title">Javascript</div>
+          import 'bootstrap-grid-webcomponents'
+        </code>
+
+        <p>Using the web components:</p>
+
+        <code class="c-code">
+          <div class="c-code__title">HTML</div>
+          <pre>
+&lt;bs-row>
+  &lt;bs-col>1 of 2&lt;/bs-col>
+  &lt;bs-col>2 of 2&lt;/bs-col>
+&lt;/bs-row></pre>
+        </code>
       </section>
 
       <hr>
 
       <div class="example c-stack">
 
+        <h2>Examples</h2>
+
         <h3>Columns</h3>
 
         <bswc-section
-          heading="Equal-width"
+          heading="Equal width"
           slug="equal-width"
         >
           <bs-row>
@@ -74,6 +110,29 @@
             <bs-col col="auto">Variable with content</bs-col>
             <bs-col>3 of 3</bs-col>
           </bs-row>
+          <bs-row>
+            <bs-col col="auto">This column has the size of its content</bs-col>
+            <bs-col col="auto">This too</bs-col>
+          </bs-row>
+        </bswc-section>
+
+        <bswc-section
+          heading="All breakpoints"
+          slug="all-breakpoints"
+        >
+          <bs-row>
+            <bs-col>col</bs-col>
+            <bs-col>col</bs-col>
+            <bs-col>col</bs-col>
+            <bs-col>col</bs-col>
+          </bs-row>
+          <bs-row>
+            <bs-col col="8">col-8</bs-col>
+            <bs-col col="4">col-4</bs-col>
+          </bs-row>
+          <bs-row>
+            <bs-col col="12">col-12</bs-col>
+          </bs-row>
         </bswc-section>
 
         <bswc-section
@@ -85,6 +144,29 @@
             <bs-col>2 of 4</bs-col>
             <bs-col>3 of 4</bs-col>
             <bs-col>4 of 4</bs-col>
+          </bs-row>
+        </bswc-section>
+
+        <h3>Responsive columns</h3>
+
+        <bswc-section>
+          <bs-row>
+            <bs-col col="6">Fixed column</bs-col>
+            <bs-col col-xl="3" col-lg="4" col-md="5" col-sm="6" col="12">Responsive column</bs-col>
+          </bs-row>
+        </bswc-section>
+
+        <h3>Rows</h3>
+
+        <bswc-section
+          heading="Offset"
+        >
+          <bs-row offset="3">
+            <bs-col>1 of 2</bs-col>
+            <bs-col>2 of 2</bs-col>
+          </bs-row>
+          <bs-row offset="6">
+            <bs-col>Half</bs-col>
           </bs-row>
         </bswc-section>
       </div>

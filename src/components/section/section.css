@@ -1,6 +1,4 @@
-﻿:root {
-
-}
+﻿:root {}
 
 :host {
   display: block;
@@ -9,15 +7,6 @@
   margin: 0 0 var(--gap-sm);
   font-size: 2rem;
   font-weight: 500;
-}
-.section__example {
-  padding: var(--gap-sm);
-  border: 1px solid rgba(var(--bd-violet-rgb), .2);
-  border-bottom: none;
-  border-radius: .6rem;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  background-color: rgba(var(--bd-violet-rgb), 0.02);
 }
 .section__link {
   display: inline-block;
@@ -39,17 +28,26 @@
   color: #333;
   font-size: 1.4rem;
 }
-.section__code-title {
-  margin: 0 0 var(--gap-sm);
-  color: #777;
-  font-weight: 300;
+.section__example {
+  padding: var(--gap-sm) var(--gap-sm) var(--gap);
+  border: 1px solid rgba(var(--bd-violet-rgb), .2);
+  border-bottom: none;
+  border-radius: .6rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: rgba(var(--bd-violet-rgb), 0.02);
 }
+.section__code-title,
 .section__example-title {
   margin: 0 0 var(--gap-sm);
   color: #777;
   font-weight: 300;
-  font-size: 1.4rem;
-
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-family: monospace;
+}
+.section__example-content {
+  margin: 0 var(--gap-sm);
 }
 
 .section > * + * {
