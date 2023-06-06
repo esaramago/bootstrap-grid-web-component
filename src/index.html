@@ -14,7 +14,7 @@
   <body>
 
     <header>
-      <img src="build/images/logo.svg" alt="Bootstrap Grid Web Component" class="c-logo">
+      <img src="/build/images/logo.svg" alt="Bootstrap Grid Web Component" class="c-logo">
       <h1>Bootstrap Grid Web Component</h1>
     </header>
 
@@ -32,7 +32,7 @@
 
       <div class="example c-stack">
 
-        <h3>Auto-layout columns</h3>
+        <h3>Columns</h3>
 
         <bswc-section
           heading="Equal-width"
@@ -65,6 +65,28 @@
           </bs-row>
         </bswc-section>
 
+        <bswc-section
+          heading="Variable width content"
+          slug="variable-width-content"
+        >
+          <bs-row>
+            <bs-col>1 of 3</bs-col>
+            <bs-col col="auto">Variable with content</bs-col>
+            <bs-col>3 of 3</bs-col>
+          </bs-row>
+        </bswc-section>
+
+        <bswc-section
+          heading="Row columns"
+          slug="row-columns"
+        >
+          <bs-row cols="3">
+            <bs-col>1 of 4</bs-col>
+            <bs-col>2 of 4</bs-col>
+            <bs-col>3 of 4</bs-col>
+            <bs-col>4 of 4</bs-col>
+          </bs-row>
+        </bswc-section>
       </div>
 
       <hr>

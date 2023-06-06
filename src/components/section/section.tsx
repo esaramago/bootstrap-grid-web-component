@@ -41,11 +41,13 @@ export class BSWCSection {
     return (
       <section class="section">
 
+
         <h4 class="section__title">{this.heading}</h4>
 
         <div>
 
           <div class="section__example">
+            <div class="section__example-title">Example</div>
             <slot></slot>
           </div>
 

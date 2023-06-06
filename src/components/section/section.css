@@ -11,7 +11,7 @@
   font-weight: 500;
 }
 .section__example {
-  padding: var(--gap-sm) var(--gap);
+  padding: var(--gap-sm);
   border: 1px solid rgba(var(--bd-violet-rgb), .2);
   border-bottom: none;
   border-radius: .6rem;
@@ -43,6 +43,13 @@
   margin: 0 0 var(--gap-sm);
   color: #777;
   font-weight: 300;
+}
+.section__example-title {
+  margin: 0 0 var(--gap-sm);
+  color: #777;
+  font-weight: 300;
+  font-size: 1.4rem;
+
 }
 
 .section > * + * {
