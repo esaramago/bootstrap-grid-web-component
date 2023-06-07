@@ -12,35 +12,16 @@ export class BSWCSection {
   @Prop() heading: string
   @Prop() slug: string
 
-  formatHtml(content: any) {
-    let string = content.replaceAll('<!---->', '')
-    string = string.replaceAll(' class="hydrated"', '')
-    let array = string.split('> <')
-    array = array.map((element, index) => {
-      const isFirst = index === 0
-      const isLast = index === array.length - 1
-      let html = ''
-      if (!isFirst) {
-        html += '<'
-      }
-      html += element
-      if (!isLast) {
-        html += '>'
-      }
-      return html
-    })
-
-    return array
-
+  getCode(content: any) {
+    return content
   }
 
   render() {
 
-    const code = this.formatHtml(this.element.innerHTML)
+    const code = this.getCode(this.element.innerHTML)
 
     return (
       <section class="section">
-
 
         <h4 class="section__title">{this.heading}</h4>
 
@@ -53,18 +34,11 @@ export class BSWCSection {
             </div>
           </div>
 
-          <pre class="section__code">
-            <h5 class="section__code-title">HTML</h5>
-            {code.map(tag => {
-              return <div>
-                <code>{tag.includes('bs-row') ? tag : '  ' + tag}</code>
-              </div>
-            })}
-          </pre>
+          <bswc-code innerHTML={code} inside-section={true}></bswc-code>
         </div>
 
         {this.slug ?
-          <a href={`https://getbootstrap.com/docs/5.3/layout/grid/#${this.slug}`} target="_blank" class="section__link">More info about {this.heading} at Bootstrap website</a>
+          <p class="section__info">More info about <a href={`https://getbootstrap.com/docs/5.3/layout/grid/#${this.slug}`} target="_blank">{this.heading}</a> at Bootstrap website.</p>
         : ''}
       </section>
     )

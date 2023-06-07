@@ -12,6 +12,10 @@ export namespace Components {
     interface BsRow {
         "name": string;
     }
+    interface BswcCode {
+        "insideSection": boolean;
+        "language": string;
+    }
     interface BswcSection {
         "heading": string;
         "slug": string;
@@ -30,6 +34,12 @@ declare global {
         prototype: HTMLBsRowElement;
         new (): HTMLBsRowElement;
     };
+    interface HTMLBswcCodeElement extends Components.BswcCode, HTMLStencilElement {
+    }
+    var HTMLBswcCodeElement: {
+        prototype: HTMLBswcCodeElement;
+        new (): HTMLBswcCodeElement;
+    };
     interface HTMLBswcSectionElement extends Components.BswcSection, HTMLStencilElement {
     }
     var HTMLBswcSectionElement: {
@@ -39,6 +49,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "bs-col": HTMLBsColElement;
         "bs-row": HTMLBsRowElement;
+        "bswc-code": HTMLBswcCodeElement;
         "bswc-section": HTMLBswcSectionElement;
     }
 }
@@ -49,6 +60,10 @@ declare namespace LocalJSX {
     interface BsRow {
         "name"?: string;
     }
+    interface BswcCode {
+        "insideSection"?: boolean;
+        "language"?: string;
+    }
     interface BswcSection {
         "heading"?: string;
         "slug"?: string;
@@ -56,6 +71,7 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "bs-col": BsCol;
         "bs-row": BsRow;
+        "bswc-code": BswcCode;
         "bswc-section": BswcSection;
     }
 }
@@ -65,6 +81,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "bs-col": LocalJSX.BsCol & JSXBase.HTMLAttributes<HTMLBsColElement>;
             "bs-row": LocalJSX.BsRow & JSXBase.HTMLAttributes<HTMLBsRowElement>;
+            "bswc-code": LocalJSX.BswcCode & JSXBase.HTMLAttributes<HTMLBswcCodeElement>;
             "bswc-section": LocalJSX.BswcSection & JSXBase.HTMLAttributes<HTMLBswcSectionElement>;
         }
     }

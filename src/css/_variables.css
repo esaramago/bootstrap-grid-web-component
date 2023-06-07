@@ -1,4 +1,6 @@
-﻿:root {
+﻿:root {}
+
+:root {
   --bd-violet-rgb: 112.520718,44.062154,249.437846;
 
   --gap: 3.2rem;
@@ -11,4 +13,6 @@
   --bs-breakpoint-lg: 992px;
   --bs-breakpoint-xl: 1200px;
   --bs-breakpoint-xxl: 1400px;
+
+  --link-color: rgb(var(--bd-violet-rgb));
 }
