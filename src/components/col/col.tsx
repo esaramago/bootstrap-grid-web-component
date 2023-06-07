@@ -1,4 +1,4 @@
-﻿import { Component, Prop, h, Host } from '@stencil/core'
+﻿import { Component, h, Host } from '@stencil/core'
 
 @Component({
   tag: 'bs-col',
@@ -7,8 +7,6 @@
 })
 
 export class BSCol {
-  @Prop() name: string
-
   render() {
     return (
       <Host>

@@ -1,5 +1,3 @@
-﻿:root {}
-
 .c-stack > * + * {
   margin-top: var(--gap);
 }

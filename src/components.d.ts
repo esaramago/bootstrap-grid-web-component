@@ -7,10 +7,8 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface BsCol {
-        "name": string;
     }
     interface BsRow {
-        "name": string;
     }
     interface BswcCode {
         "insideSection": boolean;
@@ -55,10 +53,8 @@ declare global {
 }
 declare namespace LocalJSX {
     interface BsCol {
-        "name"?: string;
     }
     interface BsRow {
-        "name"?: string;
     }
     interface BswcCode {
         "insideSection"?: boolean;
