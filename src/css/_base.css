@@ -74,3 +74,8 @@ footer {
 main > * + * {
   margin-top: var(--gap);
 }
+
+
+pre {
+  white-space: wrap;
+}

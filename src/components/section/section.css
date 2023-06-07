@@ -25,8 +25,9 @@
   border-radius: .6rem;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
-  color: #333;
+  color: #222;
   font-size: 1.4rem;
+  line-height: 1.5;
 }
 .section__example {
   padding: var(--gap-sm) var(--gap-sm) var(--gap);
