@@ -17,7 +17,7 @@ Use Bootstrap's powerful mobile-first flexbox grid to build layouts of all shape
 ### Via CDN
 `<script type="module" src="https://unpkg.com/bootstrap-grid-webcomponents@0.1.3/dist/bootstrap-grid-webcomponents/bootstrap-grid-webcomponents.esm.js"></script>`
 
-### Using the web components:
+## Using the web components:
 ```
 <bs-row>
   <bs-col>1 of 2</bs-col>
