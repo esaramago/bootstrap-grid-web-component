@@ -21,7 +21,7 @@ $gaps: (
   margin-left: calc((100%/12) * $col);
 }
 @mixin create-gaps($size, $axis) {
-  --bs-gutter-#{$axis}: $size;
+  --bs-gutter-#{$axis}: #{$size};
 }
 
 bs-row {

@@ -11,6 +11,34 @@
 .c-logo {
   height: 5rem;
 }
+.c-heading {
+  margin: 5rem 0;
+  font-size: 6rem;
+  font-weight: 700;
+  color: rgb(var(--bd-violet-rgb));
+  text-align: center;
+  text-shadow: 0 0.2rem rgba(0,0,0,0.15);
+  line-height: 1.2;
+}
+.c-lead {
+  color: #555;
+  max-width: 80rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2.5rem;
+}
+.c-beta {
+  padding: .3rem .8rem .5rem;
+  border: 2px solid #ff0000;
+  background-color: #ff5f5f;
+  color: #FFF;
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 500;
+  border-radius: .4rem;
+  line-height: 1.1;
+}
 
 .c-code {
   display: block;
