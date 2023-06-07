@@ -40,7 +40,7 @@
 .section__code-title,
 .section__example-title {
   margin: 0 0 var(--gap-sm);
-  color: #777;
+  color: #555;
   font-weight: 300;
   font-size: 1.3rem;
   text-transform: uppercase;

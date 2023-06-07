@@ -15,9 +15,10 @@ body {
 header {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: var(--gap-sm);
   margin-bottom: var(--gap);
-  padding: var(--gap-xs) var(--gap);
+  padding: var(--gap-sm) var(--gap);
   box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15), inset 0 -1px 0 rgba(255,255,255,0.15);
   background-color: rgba(var(--bd-violet-rgb), 0.05);
 }
@@ -36,7 +37,7 @@ h6 {
   font-weight: 500;
 }
 h1 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   color: #482292;
 }
 h2 {

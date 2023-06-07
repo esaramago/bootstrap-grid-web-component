@@ -9,7 +9,7 @@
 }
 
 .c-logo {
-  height: 4rem;
+  height: 5rem;
 }
 
 .c-code {
@@ -17,12 +17,12 @@
   padding: var(--gap-xs) var(--gap-sm);
   border: 1px solid rgba(var(--bd-violet-rgb), .2);
   background-color: #f8f9fa;
-  color: #333;
+  color: #222;
   font-size: 1.4rem;
 }
 .c-code__title {
   margin: 0 0 var(--gap-sm);
-  color: #777;
+  color: #555;
   font-weight: 300;
   font-size: 1.3rem;
   text-transform: uppercase;
