@@ -6,13 +6,16 @@ Bootstrap's grid system via web components
 
 Use Bootstrap's powerful mobile-first flexbox grid to build layouts of all shapes and sizes thanks to a twelve column system, six default responsive tiers and dozens of predefined attributes.
 
+[Website](https://bootstrap-grid-web-component.web.app/)
+
 ## Getting started
 
-### Installing via npm:
-`npm install bootstrap-grid-webcomponents -S`
-
-### Importing the web components:
+### Via NPM:
+`npm install bootstrap-grid-webcomponents -save`
 `import '/node_modules/bootstrap-grid-webcomponents/dist/bootstrap-grid-webcomponents/bootstrap-grid-webcomponents.esm.js'`
+
+### Via CDN
+`<script type="module" src="https://unpkg.com/bootstrap-grid-webcomponents@0.1.3/dist/bootstrap-grid-webcomponents/bootstrap-grid-webcomponents.esm.js"></script>`
 
 ### Using the web components:
 ```
