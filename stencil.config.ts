@@ -18,8 +18,13 @@ export const config: Config = {
       type: 'dist-custom-elements',
       copy: [
         {
-          src: 'images/**/*',
-          dest: 'www/build/images',
+          src: 'assests/**/*',
+          dest: 'www/assets',
+          warn: true,
+        },
+        {
+          src: '../node_modules/firebase/firebase-app-compat.js',
+          dest: 'www/build/firebase',
           warn: true,
         }
       ]

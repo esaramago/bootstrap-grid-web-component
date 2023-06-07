@@ -48,6 +48,7 @@
   color: #222;
   font-size: 1.4rem;
   line-height: 1.4;
+  overflow-x: auto;
 }
 .c-code__title {
   margin: 0 0 var(--gap-sm);
