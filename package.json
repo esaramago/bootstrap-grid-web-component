@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-grid-webcomponents",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Bootstrap Grid System Web Component",
   "author": "esaramago",
   "main": "dist/index.cjs.js",
@@ -24,7 +24,8 @@
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
-    "generate": "stencil generate"
+    "generate": "stencil generate",
+    "deploy": "npm run build && firebase deploy"
   },
   "dependencies": {
     "@stencil/core": "^3.0.0"
