@@ -16,7 +16,7 @@ header {
   margin-bottom: var(--gap);
   padding: var(--gap-sm) var(--gap);
   box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15), inset 0 -1px 0 rgba(255,255,255,0.15);
-  background-color: rgba(var(--bd-violet-rgb), 0.05);
+  background-color: rgba(var(--violet-rgb), 0.05);
 }
 
 p {

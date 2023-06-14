@@ -12,7 +12,7 @@
   margin: 5rem 0;
   font-size: 6rem;
   font-weight: 700;
-  color: rgb(var(--bd-violet-rgb));
+  color: rgb(var(--violet-rgb));
   text-align: center;
   text-shadow: 0 0.2rem rgba(0,0,0,0.15);
   line-height: 1.2;

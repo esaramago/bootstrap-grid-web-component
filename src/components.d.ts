@@ -11,11 +11,13 @@ export namespace Components {
     interface BsRow {
     }
     interface BswcCode {
-        "insideSection": boolean;
+        "hasExample": boolean;
         "language": string;
     }
     interface BswcSection {
+        "hasExample": boolean;
         "heading": string;
+        "language": string;
         "slug": string;
     }
 }
@@ -57,11 +59,13 @@ declare namespace LocalJSX {
     interface BsRow {
     }
     interface BswcCode {
-        "insideSection"?: boolean;
+        "hasExample"?: boolean;
         "language"?: string;
     }
     interface BswcSection {
+        "hasExample"?: boolean;
         "heading"?: string;
+        "language"?: string;
         "slug"?: string;
     }
     interface IntrinsicElements {

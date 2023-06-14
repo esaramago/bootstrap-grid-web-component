@@ -1,26 +1,28 @@
-﻿$media-queries: (
-  "sm": 576px,
-  "md": 768px,
-  "lg": 992px,
-  "xl": 1200px,
-  "xxl": 1400px
+$grid-columns: 12;
+$media-queries: (
+  "xs": var(--bgwc-breakpoint-xs),
+  "sm": var(--bgwc-breakpoint-sm),
+  "md": var(--bgwc-breakpoint-md),
+  "lg": var(--bgwc-breakpoint-lg),
+  "xl": var(--bgwc-breakpoint-xl),
+  "xxl": var(--bgwc-breakpoint-xxl)
 );
-$gaps: (
-  0: 0,
-  1: 0.25rem,
-  2: 0.5rem,
-  3: 1rem,
-  4: 1.5rem,
-  5: 3rem
+$gutters: (
+  0: var(--bgwc-gutter-xs),
+  1: var(--bgwc-gutter-sm),
+  2: var(--bgwc-gutter-md),
+  3: var(--bgwc-gutter-lg),
+  4: var(--bgwc-gutter-xl),
+  5: var(--bgwc-gutter-xxl)
 );
 
 @mixin create-columns($col) {
   width: calc(100% / $col);
 }
 @mixin create-offsets($col) {
-  margin-left: calc((100%/12) * $col);
+  margin-left: calc((100%/var(--bgwc-grid-columns)) * $col);
 }
-@mixin create-gaps($size, $axis) {
+@mixin create-gutters($size, $axis) {
   --bs-gutter-#{$axis}: #{$size};
 }
 
@@ -50,14 +52,14 @@ bs-row {
   &[cols="auto"] > * {
     width: auto;
   }
-  @for $i from 1 through 6 {
+  @for $i from 1 through calc($grid-columns / 2) {
     &[cols="#{$i}"] > * {
       @include create-columns($i)
     }
   }
   @each $mq, $size in $media-queries {
     @media (min-width: $size) {
-      @for $i from 1 through 6 {
+      @for $i from 1 through calc($grid-columns / 2) {
         &[cols-#{$mq}="#{$i}"] > * {
           @include create-columns($i)
         }
@@ -66,14 +68,14 @@ bs-row {
   }
 
   // Offset
-  @for $i from 0 through 11 {
+  @for $i from 0 through calc($grid-columns - 1) {
     &[offset="#{$i}"] {
       @include create-offsets($i)
     }
   }
   @each $mq, $size in $media-queries {
     @media (min-width: $size) {
-      @for $i from 1 through 11 {
+      @for $i from 1 through calc($grid-columns - 1) {
         &[offset-#{mq}="#{$i}"] {
           @include create-offsets($i)
         }
@@ -81,127 +83,39 @@ bs-row {
     }
   }
 
-  // Gap
-  @each $i, $gap in $gaps {
+  // Gutters
+  @each $i, $gutter in $gutters {
     &[g="#{$i}"],
     &[gx="#{$i}"] {
-      @include create-gaps($gap, 'x')
+      @include create-gutters($gutter, 'x')
     }
     &[g="#{$i}"],
     &[gy="#{$i}"] {
-      @include create-gaps($gap, 'y')
+      @include create-gutters($gutter, 'y')
     }
   }
   @each $mq, $size in $media-queries {
-    @each $i, $gap in $gaps {
+    @each $i, $gutter in $gutters {
       &[g-#{$mq}="#{$i}"],
       &[gx-#{$mq}="#{$i}"] {
-        @include create-gaps($gap, 'x')
+        @include create-gutters($gutter, 'x')
       }
       &[g-#{$mq}="#{$i}"],
       &[gy-#{$mq}="#{$i}"] {
-        @include create-gaps($gap, 'y')
+        @include create-gutters($gutter, 'y')
       }
     }
   }
 
 
   /* Flex */
-  &[flex="fill"] {
-    flex: 1 1 auto !important;
-  }
-  @each $mq, $size in $media-queries {
-    @media (min-width: $size) {
-      &[flex-#{$mq}="fill"] {
-        flex: 1 1 auto !important;
-      }
-    }
-  }
-
-  &[flex="row"] {
-    flex-direction: row !important;
-  }
-  @each $mq, $size in $media-queries {
-    @media (min-width: $size) {
-      &[flex="row"] {
-        flex-direction: row !important;
-      }
-    }
-  }
-
-  &[flex="column"] {
-    flex-direction: column !important;
-  }
-  @each $mq, $size in $media-queries {
-    @media (min-width: $size) {
-      &[flex="column"] {
-        flex-direction: column !important;
-      }
-    }
-  }
-
-  &[flex="row-reverse"] {
+  &[flex="reverse"] {
     flex-direction: row-reverse !important;
   }
   @each $mq, $size in $media-queries {
     @media (min-width: $size) {
-      &[flex="row-reverse"] {
+      &[flex-#{$mq}="reverse"] {
         flex-direction: row-reverse !important;
-      }
-    }
-  }
-
-  &[flex="column-reverse"] {
-    flex-direction: column-reverse !important;
-  }
-  @each $mq, $size in $media-queries {
-    @media (min-width: $size) {
-      &[flex-#{$mq}="column-reverse"] {
-        flex-direction: column-reverse !important;
-      }
-    }
-  }
-
-  &[flex="grow-0"] {
-    flex-grow: 0 !important;
-  }
-  @each $mq, $size in $media-queries {
-    @media (min-width: $size) {
-      &[flex-#{$mq}="grow-0"] {
-        flex-grow: 0 !important;
-      }
-    }
-  }
-
-  &[flex="grow-1"] {
-    flex-grow: 1 !important;
-  }
-  @each $mq, $size in $media-queries {
-    @media (min-width: $size) {
-      &[flex-#{$mq}="grow-1"] {
-        flex-grow: 1 !important;
-      }
-    }
-  }
-
-  &[flex="shrink-0"] {
-    flex-shrink: 0 !important;
-  }
-  @each $mq, $size in $media-queries {
-    @media (min-width: $size) {
-      &[flex-#{$mq}="shrink-0"] {
-        flex-shrink: 0 !important;
-      }
-    }
-  }
-
-  &[flex="shrink-1"] {
-    flex-shrink: 1 !important;
-  }
-  @each $mq, $size in $media-queries {
-    @media (min-width: $size) {
-      &[flex-#{$mq}="shrink-1"] {
-        flex-shrink: 1 !important;
       }
     }
   }

@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-grid-webcomponents",
-  "version": "0.3.4",
+  "version": "0.4.0",
   "description": "Bootstrap Grid System Web Component",
   "author": "esaramago",
   "homepage": "https://bootstrap-grid-web-component.web.app",
@@ -29,7 +29,7 @@
     "deploy": "npm run build && firebase deploy"
   },
   "dependencies": {
-    "@stencil/core": "^3.0.0"
+    "@stencil/core": "^3.4.0"
   },
   "devDependencies": {
     "@stencil/sass": "^3.0.4",

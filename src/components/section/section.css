@@ -1,4 +1,4 @@
-﻿:host {
+:host {
   display: block;
 }
 a {
@@ -19,12 +19,12 @@ a {
 
 .section__example {
   padding: var(--gap-sm) var(--gap-sm) var(--gap);
-  border: 1px solid rgba(var(--bd-violet-rgb), .2);
+  border: 1px solid rgba(var(--violet-rgb), .2);
   border-bottom: none;
   border-radius: .6rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  background-color: rgba(var(--bd-violet-rgb), 0.02);
+  background-color: rgba(var(--violet-rgb), 0.02);
 }
 .section__example-title {
   margin: 0 0 var(--gap-sm);

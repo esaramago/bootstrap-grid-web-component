@@ -1,13 +1,15 @@
-﻿$media-queries: (
-  "sm": 576px,
-  "md": 768px,
-  "lg": 992px,
-  "xl": 1200px,
-  "xxl": 1400px
+$grid-columns: 12;
+$media-queries: (
+  "xs": var(--bgwc-breakpoint-xs),
+  "sm": var(--bgwc-breakpoint-sm),
+  "md": var(--bgwc-breakpoint-md),
+  "lg": var(--bgwc-breakpoint-lg),
+  "xl": var(--bgwc-breakpoint-xl),
+  "xxl": var(--bgwc-breakpoint-xxl)
 );
 
 @mixin create-columns($col) {
-  width: calc((100%/12) * $col);
+  width: calc((100%/var(--bgwc-grid-columns)) * $col);
 }
 
 bs-col {
@@ -19,14 +21,14 @@ bs-col {
   &[col="auto"] {
     width: auto;
   }
-  @for $i from 1 through 12 {
+  @for $i from 1 through $grid-columns {
     &[col="#{$i}"] {
       @include create-columns($i)
     }
   }
   @each $mq, $size in $media-queries {
     @media (min-width: $size) {
-      @for $i from 1 through 12 {
+      @for $i from 1 through $grid-columns {
         &[col-#{$mq}="#{$i}"] {
           @include create-columns($i)
         }
@@ -47,22 +49,45 @@ bs-col {
     order: 6 !important;
   }
 
-  &[align="auto"] {
-    align-self: auto !important;
-  }
+
   &[align="start"] {
-    align-self: flex-start !important;
+    align-self: start !important;
+  }
+  @each $mq, $size in $media-queries {
+    @media (min-width: $size) {
+      &[align-#{$mq}="start"] {
+        align-self: start !important;
+      }
+    }
   }
   &[align="end"] {
-    align-self: flex-end !important;
+    align-self: end !important;
+  }
+  @each $mq, $size in $media-queries {
+    @media (min-width: $size) {
+      &[align-#{$mq}="end"] {
+        align-self: end !important;
+      }
+    }
   }
   &[align="center"] {
     align-self: center !important;
   }
-  &[align="baseline"] {
-    align-self: baseline !important;
+  @each $mq, $size in $media-queries {
+    @media (min-width: $size) {
+      &[align-#{$mq}="center"] {
+        align-self: center !important;
+      }
+    }
   }
   &[align="stretch"] {
     align-self: stretch !important;
+  }
+  @each $mq, $size in $media-queries {
+    @media (min-width: $size) {
+      &[align-#{$mq}="stretch"] {
+        align-self: stretch !important;
+      }
+    }
   }
 }

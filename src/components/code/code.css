@@ -1,4 +1,4 @@
-﻿:host {
+:host {
   display: block;
 }
 
@@ -9,7 +9,7 @@ pre {
 .code {
   display: block;
   padding: var(--gap-xs) var(--gap-sm) var(--gap-sm);
-  border: 1px solid rgba(var(--bd-violet-rgb), .2);
+  border: 1px solid rgba(var(--violet-rgb), .2);
   border-radius: .6rem;
   background-color: #f8f9fa;
   color: #222;

@@ -1,16 +1,27 @@
 :root {
-  --bd-violet-rgb: 112.520718,44.062154,249.437846;
+
+  /* Examples */
+  --violet-rgb: 112.520718,44.062154,249.437846;
+  --link-color: rgb(var(--violet-rgb));
 
   --gap: 3.2rem;
   --gap-sm: 1.6rem;
   --gap-xs: 1rem;
 
-  --bs-breakpoint-xs: 0;
-  --bs-breakpoint-sm: 576px;
-  --bs-breakpoint-md: 768px;
-  --bs-breakpoint-lg: 992px;
-  --bs-breakpoint-xl: 1200px;
-  --bs-breakpoint-xxl: 1400px;
+  /* BGWC */
+  --bgwc-grid-columns: 12;
 
-  --link-color: rgb(var(--bd-violet-rgb));
+  --bgwc-gutter-xs: 0;
+  --bgwc-gutter-sm: 0.25rem;
+  --bgwc-gutter-md: 0.5rem;
+  --bgwc-gutter-lg: 1rem;
+  --bgwc-gutter-xl: 1.5rem;
+  --bgwc-gutter-xxl: 3rem;
+
+  --bgwc-breakpoint-xs: 0;
+  --bgwc-breakpoint-sm: 576px;
+  --bgwc-breakpoint-md: 768px;
+  --bgwc-breakpoint-lg: 992px;
+  --bgwc-breakpoint-xl: 1200px;
+  --bgwc-breakpoint-xxl: 1400px;
 }

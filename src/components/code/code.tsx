@@ -1,4 +1,4 @@
-﻿import { Component, Element, Prop, h } from '@stencil/core'
+import { Component, Element, Prop, h } from '@stencil/core'
 
 @Component({
   tag: 'bswc-code',
@@ -8,8 +8,8 @@
 
 export class BSWCCode {
   @Element() element: HTMLElement;
-  @Prop() language: string
-  @Prop() insideSection: boolean
+  @Prop() language: string = 'HTML'
+  @Prop() hasExample: boolean
 
   formatHtml(content: any) {
     let string = content.replaceAll('<!---->', '')
@@ -38,8 +38,8 @@ export class BSWCCode {
     const code = this.formatHtml(this.element.innerHTML)
 
     return (
-      <div class={'code ' + (this.insideSection ? 'code--example' : '')}>
-        <h5 class="code__title">{this.language ?? 'HTML'}</h5>
+      <div class={'code ' + (this.hasExample ? 'code--example' : '')}>
+        <h5 class="code__title">{this.language}</h5>
         {code.map(tag => {
           return <pre><code>{tag.includes('bs-row') ? tag : '  ' + tag}</code>
           </pre>

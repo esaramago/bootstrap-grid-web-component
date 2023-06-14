@@ -1,4 +1,4 @@
-﻿import { Component, Element, Prop, h } from '@stencil/core'
+import { Component, Element, Prop, h } from '@stencil/core'
 
 @Component({
   tag: 'bswc-section',
@@ -7,10 +7,11 @@
 })
 
 export class BSWCSection {
-  @Element() element: HTMLElement;
-
+  @Element() element: HTMLElement
   @Prop() heading: string
   @Prop() slug: string
+  @Prop() hasExample: boolean = true
+  @Prop() language: string = ''
 
   getCode(content: any) {
     return content
@@ -27,14 +28,16 @@ export class BSWCSection {
 
         <div>
 
-          <div class="section__example">
-            <div class="section__example-title">Example</div>
-            <div class="section__example-content">
-              <slot></slot>
+          {this.hasExample ?
+            <div class="section__example">
+              <div class="section__example-title">Example</div>
+              <div class="section__example-content">
+                <slot></slot>
+              </div>
             </div>
-          </div>
+          : ''}
 
-          <bswc-code innerHTML={code} inside-section={true}></bswc-code>
+          <bswc-code innerHTML={code} has-example={this.hasExample} language={this.language}></bswc-code>
         </div>
 
         {this.slug ?

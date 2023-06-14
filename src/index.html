@@ -27,7 +27,7 @@
 
         <bs-row justify="center">
           <bs-col col="auto">
-            <div class="c-beta">Version 0.3.1@beta</div>
+            <div class="c-beta">Version: v0.4 beta</div>
           </bs-col>
         </bs-row>
 
@@ -166,12 +166,24 @@
           </bs-row>
         </bswc-section>
 
-        <h3>Responsive columns</h3>
-
-        <bswc-section>
+        <bswc-section
+          heading="Responsive columns"
+        >
           <bs-row>
             <bs-col col="6">Fixed column</bs-col>
             <bs-col col-xl="3" col-lg="4" col-md="5" col-sm="6" col="12">Responsive column</bs-col>
+          </bs-row>
+        </bswc-section>
+
+        <bswc-section
+          heading="Align"
+        >
+          <bs-row>
+            <bs-col col="2">Taller<br>column</bs-col>
+            <bs-col col="2" align="start">Start</bs-col>
+            <bs-col col="2" align="center">Center</bs-col>
+            <bs-col col="2" align="end">End</bs-col>
+            <bs-col col="2" align="stretch">stretch</bs-col>
           </bs-row>
         </bswc-section>
 
@@ -188,7 +200,127 @@
             <bs-col>Half</bs-col>
           </bs-row>
         </bswc-section>
+
+        <bswc-section
+          heading="Direction"
+        >
+          <bs-row flex="reverse">
+            <bs-col>1 of 3</bs-col>
+            <bs-col>2 of 3</bs-col>
+            <bs-col>3 of 3</bs-col>
+          </bs-row>
+        </bswc-section>
+
+        <bswc-section
+          heading="Wrap"
+        >
+          <bs-row>
+            <bs-col col="4">1</bs-col>
+            <bs-col col="4">2</bs-col>
+            <bs-col col="4">3</bs-col>
+            <bs-col col="4">This column goes to a second line</bs-col>
+          </bs-row>
+          <bs-row flex="nowrap">
+            <bs-col col="4">1</bs-col>
+            <bs-col col="4">2</bs-col>
+            <bs-col col="4">3</bs-col>
+            <bs-col col="4">This column keeps in one line</bs-col>
+          </bs-row>
+          <bs-row flex="wrap-reverse">
+            <bs-col col="4">1</bs-col>
+            <bs-col col="4">2</bs-col>
+            <bs-col col="4">3</bs-col>
+            <bs-col col="4">This column keeps on the first line</bs-col>
+          </bs-row>
+        </bswc-section>
+
+        <bswc-section
+          heading="Justify"
+        >
+          <bs-row>
+            <bs-col col="3">1 of 3</bs-col>
+            <bs-col col="3">2 of 3</bs-col>
+            <bs-col col="3">3 of 3</bs-col>
+          </bs-row>
+          <bs-row justify="end">
+            <bs-col col="3">1 of 3</bs-col>
+            <bs-col col="3">2 of 3</bs-col>
+            <bs-col col="3">3 of 3</bs-col>
+          </bs-row>
+          <bs-row justify="between">
+            <bs-col col="3">1 of 3</bs-col>
+            <bs-col col="3">2 of 3</bs-col>
+            <bs-col col="3">3 of 3</bs-col>
+          </bs-row>
+          <bs-row justify="around">
+            <bs-col col="3">1 of 3</bs-col>
+            <bs-col col="3">2 of 3</bs-col>
+            <bs-col col="3">3 of 3</bs-col>
+          </bs-row>
+          <bs-row justify="evenly">
+            <bs-col col="3">1 of 3</bs-col>
+            <bs-col col="3">2 of 3</bs-col>
+            <bs-col col="3">3 of 3</bs-col>
+          </bs-row>
+        </bswc-section>
+
+        <bswc-section
+          heading="Align"
+        >
+          <bs-row align="start">
+            <bs-col col="6">Taller<br>column</bs-col>
+            <bs-col col="6">2 of 2</bs-col>
+          </bs-row>
+          <bs-row align="end">
+            <bs-col col="6">Taller<br>column</bs-col>
+            <bs-col col="6">2 of 2</bs-col>
+          </bs-row>
+          <bs-row align="stretch">
+            <bs-col col="6">Taller<br>column</bs-col>
+            <bs-col col="6">2 of 2</bs-col>
+          </bs-row>
+        </bswc-section>
+
+
       </div>
+
+      <hr>
+
+      <h2>Customizing the grid</h2>
+
+      <h3>Custom properties</h3>
+
+      <p>You can change these CSS Custom Properties (AKA Variables) to customize Media Queries breakpoints and gutters between columns.</p>
+
+      <bswc-section
+        heading="Breakpoints"
+        has-example="false"
+        language="CSS"
+      >
+:root {
+      --bgwc-breakpoint-xs: 0;
+      --bgwc-breakpoint-sm: 576px;
+      --bgwc-breakpoint-md: 768px;
+      --bgwc-breakpoint-lg: 992px;
+      --bgwc-breakpoint-xl: 1200px;
+      --bgwc-breakpoint-xxl: 1400px;
+    }
+      </bswc-section>
+
+      <bswc-section
+        heading="Gutters"
+        has-example="false"
+        language="CSS"
+      >
+:root {
+      --bgwc-gutter-xs: 0;
+      --bgwc-gutter-sm: 0.25rem;
+      --bgwc-gutter-md: 0.5rem;
+      --bgwc-gutter-lg: 1rem;
+      --bgwc-gutter-xl: 1.5rem;
+      --bgwc-gutter-xxl: 3rem;
+    }
+      </bswc-section>
 
       <hr>
 
