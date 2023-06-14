@@ -7,10 +7,10 @@
 
 ## Properties
 
-| Property        | Attribute        | Description | Type      | Default     |
-| --------------- | ---------------- | ----------- | --------- | ----------- |
-| `insideSection` | `inside-section` |             | `boolean` | `undefined` |
-| `language`      | `language`       |             | `string`  | `undefined` |
+| Property     | Attribute     | Description | Type      | Default     |
+| ------------ | ------------- | ----------- | --------- | ----------- |
+| `hasExample` | `has-example` |             | `boolean` | `undefined` |
+| `language`   | `language`    |             | `string`  | `'HTML'`    |
 
 
 ## Dependencies

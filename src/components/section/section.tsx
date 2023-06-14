@@ -1,4 +1,4 @@
-import { Component, Element, Prop, h } from '@stencil/core'
+﻿import { Component, Element, Prop, h } from '@stencil/core'
 
 @Component({
   tag: 'bswc-section',

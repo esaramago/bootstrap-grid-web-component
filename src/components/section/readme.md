@@ -7,10 +7,12 @@
 
 ## Properties
 
-| Property  | Attribute | Description | Type     | Default     |
-| --------- | --------- | ----------- | -------- | ----------- |
-| `heading` | `heading` |             | `string` | `undefined` |
-| `slug`    | `slug`    |             | `string` | `undefined` |
+| Property     | Attribute     | Description | Type      | Default     |
+| ------------ | ------------- | ----------- | --------- | ----------- |
+| `hasExample` | `has-example` |             | `boolean` | `true`      |
+| `heading`    | `heading`     |             | `string`  | `undefined` |
+| `language`   | `language`    |             | `string`  | `''`        |
+| `slug`       | `slug`        |             | `string`  | `undefined` |
 
 
 ## Dependencies
