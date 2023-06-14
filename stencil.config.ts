@@ -12,32 +12,25 @@ export const config: Config = {
   outputTargets: [
     {
       type: 'dist',
-      esmLoaderPath: '../loader',
     },
-    {
-      type: 'dist-custom-elements',
-      copy: [
-        {
-          src: 'assests/**/*',
-          dest: 'www/assets',
-          warn: true,
-        },
-        {
-          src: '../node_modules/firebase/firebase-app-compat.js',
-          dest: 'www/build/firebase',
-          warn: true,
-        }
-      ]
-    },
-    {
-      type: 'docs-readme',
-    },
+
+    // Website
     {
       type: 'www',
-      serviceWorker: null, // disable service workers
+      copy: [
+        {
+          src: 'images', warn: true
+        },
+        {
+          src: 'site.webmanifest', warn: true
+        },
+        {
+          src: 'css', warn: true
+        },
+      ]
     },
   ],
-  globalStyle: 'src/css/main.css',
+  globalStyle: 'src/global.css',
   plugins: [
     sass()
   ],
