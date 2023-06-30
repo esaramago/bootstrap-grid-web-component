@@ -1,19 +1,9 @@
-$grid-columns: 12;
-
-$media-queries: (
-  "xs": var(--bwc-breakpoint-xs),
-  "sm": var(--bwc-breakpoint-sm),
-  "md": var(--bwc-breakpoint-md),
-  "lg": var(--bwc-breakpoint-lg),
-  "xl": var(--bwc-breakpoint-xl),
-  "xxl": var(--bwc-breakpoint-xxl)
-);
-
 @mixin create-columns($col) {
   width: calc((100%/var(--bwc-grid-columns)) * $col);
 }
 
 bwc-col {
+  --bwc-grid-columns: 12;
   flex: 1 0 0%;
 
   &[col] {
@@ -92,3 +82,4 @@ bwc-col {
     }
   }
 }
+

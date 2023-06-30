@@ -1,0 +1,38 @@
+:root {
+  /* BGWC */
+  --bwc-grid-columns: 12;
+
+  --bwc-gutter-xs: 0;
+  --bwc-gutter-sm: 0.25rem;
+  --bwc-gutter-md: 0.5rem;
+  --bwc-gutter-lg: 1rem;
+  --bwc-gutter-xl: 1.5rem;
+  --bwc-gutter-xxl: 3rem;
+
+/*   --bwc-breakpoint-xs: 0;
+  --bwc-breakpoint-sm: 576px;
+  --bwc-breakpoint-md: 768px;
+  --bwc-breakpoint-lg: 992px;
+  --bwc-breakpoint-xl: 1200px;
+  --bwc-breakpoint-xxl: 1400px; */
+}
+
+$grid-columns: 12;
+
+$gutters: (
+  0: var(--bwc-gutter-xs),
+  1: var(--bwc-gutter-sm),
+  2: var(--bwc-gutter-md),
+  3: var(--bwc-gutter-lg),
+  4: var(--bwc-gutter-xl),
+  5: var(--bwc-gutter-xxl)
+);
+
+$media-queries: (
+  "xs": 0,
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+  "xxl": 1400px
+);
