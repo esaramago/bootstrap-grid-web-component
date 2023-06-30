@@ -2,7 +2,6 @@
 
 @Component({
   tag: 'bwc-row',
-  styleUrl: './row.scss',
   shadow: false
 })
 

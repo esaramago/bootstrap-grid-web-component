@@ -19,19 +19,23 @@ export const config: Config = {
       type: 'www',
       copy: [
         {
-          src: 'images', warn: true
+          src: 'images',
         },
         {
-          src: 'site.webmanifest', warn: true
+          src: 'site.webmanifest',
         },
         {
-          src: 'css', warn: true
+          src: 'css',
         },
       ]
     },
   ],
-  globalStyle: 'src/global.css',
+  globalStyle: 'src/cssGlobals/global.scss',
   plugins: [
-    sass()
+    sass({
+      includePaths: [
+        'src/cssGlobals/global.scss',
+      ]
+    })
   ],
 }
