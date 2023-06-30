@@ -1,10 +1,10 @@
-.example bs-row {
+.example bwc-row {
   --violet-rgb: 112.520718,44.062154,249.437846;
   margin-top: var(--gap-sm);
   background-color: rgba(var(--violet-rgb), 0.1);
   border: 1px solid rgba(var(--violet-rgb), .5);
 }
-.example bs-col {
+.example bwc-col {
   padding-top: calc(var(--gap) / 3);
   padding-bottom: calc(var(--gap) / 3);
   background-color: rgba(var(--violet-rgb), 0.2);

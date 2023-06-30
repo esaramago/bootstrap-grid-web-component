@@ -1,19 +1,19 @@
 $grid-columns: 12;
 
 $media-queries: (
-  "xs": var(--bgwc-breakpoint-xs),
-  "sm": var(--bgwc-breakpoint-sm),
-  "md": var(--bgwc-breakpoint-md),
-  "lg": var(--bgwc-breakpoint-lg),
-  "xl": var(--bgwc-breakpoint-xl),
-  "xxl": var(--bgwc-breakpoint-xxl)
+  "xs": var(--bwc-breakpoint-xs),
+  "sm": var(--bwc-breakpoint-sm),
+  "md": var(--bwc-breakpoint-md),
+  "lg": var(--bwc-breakpoint-lg),
+  "xl": var(--bwc-breakpoint-xl),
+  "xxl": var(--bwc-breakpoint-xxl)
 );
 
 @mixin create-columns($col) {
-  width: calc((100%/var(--bgwc-grid-columns)) * $col);
+  width: calc((100%/var(--bwc-grid-columns)) * $col);
 }
 
-bs-col {
+bwc-col {
   flex: 1 0 0%;
 
   &[col] {

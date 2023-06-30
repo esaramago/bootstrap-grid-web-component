@@ -28,25 +28,25 @@
 
         <h1 class="c-heading">Bootstrap's Grid System<br>via Web Components</h1>
 
-        <bs-row justify="center">
-          <bs-col col="auto">
+        <bwc-row justify="center">
+          <bwc-col col="auto">
             <div class="c-beta">Version: v0.4 beta</div>
-          </bs-col>
-        </bs-row>
+          </bwc-col>
+        </bwc-row>
 
         <p class="c-lead">Use Bootstrap's powerful mobile-first flexbox grid to build layouts of all shapes and sizes thanks to a twelve column system, six default responsive tiers and dozens of predefined attributes.<br><strong>With Web Components!</strong></p>
 
-        <bs-row justify="center" g="5">
-          <bs-col col="auto">
+        <bwc-row justify="center" g="5">
+          <bwc-col col="auto">
             <a href="https://developer.mozilla.org/pt-BR/docs/Web/API/Web_components" target="_blank">Web components</a>
-          </bs-col>
-          <bs-col col="auto">
+          </bwc-col>
+          <bwc-col col="auto">
             <a href="https://getbootstrap.com/docs/5.3/layout/grid/" target="_blank">Bootstrap's Grid System</a>
-          </bs-col>
-          <bs-col col="auto">
+          </bwc-col>
+          <bwc-col col="auto">
             <a href="https://github.com/esaramago/bootstrap-grid-web-component" target="_blank">Code on GitHub</a>
-          </bs-col>
-        </bs-row>
+          </bwc-col>
+        </bwc-row>
 
       </section>
 
@@ -79,10 +79,10 @@ import '/node_modules/bootstrap-grid-webcomponents/dist/bootstrap-grid-webcompon
         <h3>Using the web components:</h3>
 
         <bswc-code>
-          <bs-row>
-            <bs-col>1 of 2</bs-col>
-            <bs-col>2 of 2</bs-col>
-          </bs-row>
+          <bwc-row>
+            <bwc-col>1 of 2</bwc-col>
+            <bwc-col>2 of 2</bwc-col>
+          </bwc-row>
         </bswc-code>
       </section>
 
@@ -98,98 +98,98 @@ import '/node_modules/bootstrap-grid-webcomponents/dist/bootstrap-grid-webcompon
           heading="Equal width"
           slug="equal-width"
         >
-          <bs-row>
-            <bs-col>1 of 2</bs-col>
-            <bs-col>2 of 2</bs-col>
-          </bs-row>
-          <bs-row>
-            <bs-col>1 of 3</bs-col>
-            <bs-col>2 of 3</bs-col>
-            <bs-col>3 of 3</bs-col>
-          </bs-row>
+          <bwc-row>
+            <bwc-col>1 of 2</bwc-col>
+            <bwc-col>2 of 2</bwc-col>
+          </bwc-row>
+          <bwc-row>
+            <bwc-col>1 of 3</bwc-col>
+            <bwc-col>2 of 3</bwc-col>
+            <bwc-col>3 of 3</bwc-col>
+          </bwc-row>
         </bswc-section>
 
         <bswc-section
           heading="Setting one column width"
           slug="setting-one-column-width"
         >
-          <bs-row>
-            <bs-col>1 of 3</bs-col>
-            <bs-col col="6">2 of 3 (wider)</bs-col>
-            <bs-col>3 of 3</bs-col>
-          </bs-row>
-          <bs-row>
-            <bs-col>1 of 3</bs-col>
-            <bs-col col="5">2 of 3 (wider)</bs-col>
-            <bs-col>3 of 3</bs-col>
-          </bs-row>
+          <bwc-row>
+            <bwc-col>1 of 3</bwc-col>
+            <bwc-col col="6">2 of 3 (wider)</bwc-col>
+            <bwc-col>3 of 3</bwc-col>
+          </bwc-row>
+          <bwc-row>
+            <bwc-col>1 of 3</bwc-col>
+            <bwc-col col="5">2 of 3 (wider)</bwc-col>
+            <bwc-col>3 of 3</bwc-col>
+          </bwc-row>
         </bswc-section>
 
         <bswc-section
           heading="Variable width content"
           slug="variable-width-content"
         >
-          <bs-row>
-            <bs-col>1 of 3</bs-col>
-            <bs-col col="auto">Variable with content</bs-col>
-            <bs-col>3 of 3</bs-col>
-          </bs-row>
-          <bs-row>
-            <bs-col col="auto">This column has the size of its content</bs-col>
-            <bs-col col="auto">This too</bs-col>
-          </bs-row>
+          <bwc-row>
+            <bwc-col>1 of 3</bwc-col>
+            <bwc-col col="auto">Variable with content</bwc-col>
+            <bwc-col>3 of 3</bwc-col>
+          </bwc-row>
+          <bwc-row>
+            <bwc-col col="auto">This column has the size of its content</bwc-col>
+            <bwc-col col="auto">This too</bwc-col>
+          </bwc-row>
         </bswc-section>
 
         <bswc-section
           heading="All breakpoints"
           slug="all-breakpoints"
         >
-          <bs-row>
-            <bs-col>col</bs-col>
-            <bs-col>col</bs-col>
-            <bs-col>col</bs-col>
-            <bs-col>col</bs-col>
-          </bs-row>
-          <bs-row>
-            <bs-col col="8">col-8</bs-col>
-            <bs-col col="4">col-4</bs-col>
-          </bs-row>
-          <bs-row>
-            <bs-col col="12">col-12</bs-col>
-          </bs-row>
+          <bwc-row>
+            <bwc-col>col</bwc-col>
+            <bwc-col>col</bwc-col>
+            <bwc-col>col</bwc-col>
+            <bwc-col>col</bwc-col>
+          </bwc-row>
+          <bwc-row>
+            <bwc-col col="8">col-8</bwc-col>
+            <bwc-col col="4">col-4</bwc-col>
+          </bwc-row>
+          <bwc-row>
+            <bwc-col col="12">col-12</bwc-col>
+          </bwc-row>
         </bswc-section>
 
         <bswc-section
           heading="Row columns"
           slug="row-columns"
         >
-          <bs-row cols="3">
-            <bs-col>1 of 4</bs-col>
-            <bs-col>2 of 4</bs-col>
-            <bs-col>3 of 4</bs-col>
-            <bs-col>4 of 4</bs-col>
-          </bs-row>
+          <bwc-row cols="3">
+            <bwc-col>1 of 4</bwc-col>
+            <bwc-col>2 of 4</bwc-col>
+            <bwc-col>3 of 4</bwc-col>
+            <bwc-col>4 of 4</bwc-col>
+          </bwc-row>
         </bswc-section>
 
         <bswc-section
           heading="Responsive columns"
         >
-          <bs-row>
-            <bs-col col="6">Fixed column</bs-col>
-            <bs-col col-xl="3" col-lg="4" col-md="5" col-sm="6" col="12">Responsive column</bs-col>
-          </bs-row>
+          <bwc-row>
+            <bwc-col col="6">Fixed column</bwc-col>
+            <bwc-col col-xl="3" col-lg="4" col-md="5" col-sm="6" col="12">Responsive column</bwc-col>
+          </bwc-row>
         </bswc-section>
 
         <bswc-section
           heading="Align"
         >
-          <bs-row>
-            <bs-col col="2">Taller<br>column</bs-col>
-            <bs-col col="2" align="start">Start</bs-col>
-            <bs-col col="2" align="center">Center</bs-col>
-            <bs-col col="2" align="end">End</bs-col>
-            <bs-col col="2" align="stretch">stretch</bs-col>
-          </bs-row>
+          <bwc-row>
+            <bwc-col col="2">Taller<br>column</bwc-col>
+            <bwc-col col="2" align="start">Start</bwc-col>
+            <bwc-col col="2" align="center">Center</bwc-col>
+            <bwc-col col="2" align="end">End</bwc-col>
+            <bwc-col col="2" align="stretch">stretch</bwc-col>
+          </bwc-row>
         </bswc-section>
 
         <h3>Rows</h3>
@@ -197,93 +197,93 @@ import '/node_modules/bootstrap-grid-webcomponents/dist/bootstrap-grid-webcompon
         <bswc-section
           heading="Offset"
         >
-          <bs-row offset="3">
-            <bs-col>1 of 2</bs-col>
-            <bs-col>2 of 2</bs-col>
-          </bs-row>
-          <bs-row offset="6">
-            <bs-col>Half</bs-col>
-          </bs-row>
+          <bwc-row offset="3">
+            <bwc-col>1 of 2</bwc-col>
+            <bwc-col>2 of 2</bwc-col>
+          </bwc-row>
+          <bwc-row offset="6">
+            <bwc-col>Half</bwc-col>
+          </bwc-row>
         </bswc-section>
 
         <bswc-section
           heading="Direction"
         >
-          <bs-row flex="reverse">
-            <bs-col>1 of 3</bs-col>
-            <bs-col>2 of 3</bs-col>
-            <bs-col>3 of 3</bs-col>
-          </bs-row>
+          <bwc-row flex="reverse">
+            <bwc-col>1 of 3</bwc-col>
+            <bwc-col>2 of 3</bwc-col>
+            <bwc-col>3 of 3</bwc-col>
+          </bwc-row>
         </bswc-section>
 
         <bswc-section
           heading="Wrap"
         >
-          <bs-row>
-            <bs-col col="4">1</bs-col>
-            <bs-col col="4">2</bs-col>
-            <bs-col col="4">3</bs-col>
-            <bs-col col="4">This column goes to a second line</bs-col>
-          </bs-row>
-          <bs-row flex="nowrap">
-            <bs-col col="4">1</bs-col>
-            <bs-col col="4">2</bs-col>
-            <bs-col col="4">3</bs-col>
-            <bs-col col="4">This column keeps in one line</bs-col>
-          </bs-row>
-          <bs-row flex="wrap-reverse">
-            <bs-col col="4">1</bs-col>
-            <bs-col col="4">2</bs-col>
-            <bs-col col="4">3</bs-col>
-            <bs-col col="4">This column keeps on the first line</bs-col>
-          </bs-row>
+          <bwc-row>
+            <bwc-col col="4">1</bwc-col>
+            <bwc-col col="4">2</bwc-col>
+            <bwc-col col="4">3</bwc-col>
+            <bwc-col col="4">This column goes to a second line</bwc-col>
+          </bwc-row>
+          <bwc-row flex="nowrap">
+            <bwc-col col="4">1</bwc-col>
+            <bwc-col col="4">2</bwc-col>
+            <bwc-col col="4">3</bwc-col>
+            <bwc-col col="4">This column keeps in one line</bwc-col>
+          </bwc-row>
+          <bwc-row flex="wrap-reverse">
+            <bwc-col col="4">1</bwc-col>
+            <bwc-col col="4">2</bwc-col>
+            <bwc-col col="4">3</bwc-col>
+            <bwc-col col="4">This column keeps on the first line</bwc-col>
+          </bwc-row>
         </bswc-section>
 
         <bswc-section
           heading="Justify"
         >
-          <bs-row>
-            <bs-col col="3">1 of 3</bs-col>
-            <bs-col col="3">2 of 3</bs-col>
-            <bs-col col="3">3 of 3</bs-col>
-          </bs-row>
-          <bs-row justify="end">
-            <bs-col col="3">1 of 3</bs-col>
-            <bs-col col="3">2 of 3</bs-col>
-            <bs-col col="3">3 of 3</bs-col>
-          </bs-row>
-          <bs-row justify="between">
-            <bs-col col="3">1 of 3</bs-col>
-            <bs-col col="3">2 of 3</bs-col>
-            <bs-col col="3">3 of 3</bs-col>
-          </bs-row>
-          <bs-row justify="around">
-            <bs-col col="3">1 of 3</bs-col>
-            <bs-col col="3">2 of 3</bs-col>
-            <bs-col col="3">3 of 3</bs-col>
-          </bs-row>
-          <bs-row justify="evenly">
-            <bs-col col="3">1 of 3</bs-col>
-            <bs-col col="3">2 of 3</bs-col>
-            <bs-col col="3">3 of 3</bs-col>
-          </bs-row>
+          <bwc-row>
+            <bwc-col col="3">1 of 3</bwc-col>
+            <bwc-col col="3">2 of 3</bwc-col>
+            <bwc-col col="3">3 of 3</bwc-col>
+          </bwc-row>
+          <bwc-row justify="end">
+            <bwc-col col="3">1 of 3</bwc-col>
+            <bwc-col col="3">2 of 3</bwc-col>
+            <bwc-col col="3">3 of 3</bwc-col>
+          </bwc-row>
+          <bwc-row justify="between">
+            <bwc-col col="3">1 of 3</bwc-col>
+            <bwc-col col="3">2 of 3</bwc-col>
+            <bwc-col col="3">3 of 3</bwc-col>
+          </bwc-row>
+          <bwc-row justify="around">
+            <bwc-col col="3">1 of 3</bwc-col>
+            <bwc-col col="3">2 of 3</bwc-col>
+            <bwc-col col="3">3 of 3</bwc-col>
+          </bwc-row>
+          <bwc-row justify="evenly">
+            <bwc-col col="3">1 of 3</bwc-col>
+            <bwc-col col="3">2 of 3</bwc-col>
+            <bwc-col col="3">3 of 3</bwc-col>
+          </bwc-row>
         </bswc-section>
 
         <bswc-section
           heading="Align"
         >
-          <bs-row align="start">
-            <bs-col col="6">Taller<br>column</bs-col>
-            <bs-col col="6">2 of 2</bs-col>
-          </bs-row>
-          <bs-row align="end">
-            <bs-col col="6">Taller<br>column</bs-col>
-            <bs-col col="6">2 of 2</bs-col>
-          </bs-row>
-          <bs-row align="stretch">
-            <bs-col col="6">Taller<br>column</bs-col>
-            <bs-col col="6">2 of 2</bs-col>
-          </bs-row>
+          <bwc-row align="start">
+            <bwc-col col="6">Taller<br>column</bwc-col>
+            <bwc-col col="6">2 of 2</bwc-col>
+          </bwc-row>
+          <bwc-row align="end">
+            <bwc-col col="6">Taller<br>column</bwc-col>
+            <bwc-col col="6">2 of 2</bwc-col>
+          </bwc-row>
+          <bwc-row align="stretch">
+            <bwc-col col="6">Taller<br>column</bwc-col>
+            <bwc-col col="6">2 of 2</bwc-col>
+          </bwc-row>
         </bswc-section>
 
 
@@ -303,12 +303,12 @@ import '/node_modules/bootstrap-grid-webcomponents/dist/bootstrap-grid-webcompon
         language="CSS"
       >
 :root {
-      --bgwc-breakpoint-xs: 0;
-      --bgwc-breakpoint-sm: 576px;
-      --bgwc-breakpoint-md: 768px;
-      --bgwc-breakpoint-lg: 992px;
-      --bgwc-breakpoint-xl: 1200px;
-      --bgwc-breakpoint-xxl: 1400px;
+      --bwc-breakpoint-xs: 0;
+      --bwc-breakpoint-sm: 576px;
+      --bwc-breakpoint-md: 768px;
+      --bwc-breakpoint-lg: 992px;
+      --bwc-breakpoint-xl: 1200px;
+      --bwc-breakpoint-xxl: 1400px;
     }
       </bswc-section>
 
@@ -318,12 +318,12 @@ import '/node_modules/bootstrap-grid-webcomponents/dist/bootstrap-grid-webcompon
         language="CSS"
       >
 :root {
-      --bgwc-gutter-xs: 0;
-      --bgwc-gutter-sm: 0.25rem;
-      --bgwc-gutter-md: 0.5rem;
-      --bgwc-gutter-lg: 1rem;
-      --bgwc-gutter-xl: 1.5rem;
-      --bgwc-gutter-xxl: 3rem;
+      --bwc-gutter-xs: 0;
+      --bwc-gutter-sm: 0.25rem;
+      --bwc-gutter-md: 0.5rem;
+      --bwc-gutter-lg: 1rem;
+      --bwc-gutter-xl: 1.5rem;
+      --bwc-gutter-xxl: 3rem;
     }
       </bswc-section>
 
@@ -332,9 +332,9 @@ import '/node_modules/bootstrap-grid-webcomponents/dist/bootstrap-grid-webcompon
     </main>
 
     <footer>
-      <bs-row justify="center">
-        <bs-col col="auto">Made by <a href="https://github.com/esaramago" target="_blank">Emanuel Saramago</a></bs-col>
-      </bs-row>
+      <bwc-row justify="center">
+        <bwc-col col="auto">Made by <a href="https://github.com/esaramago" target="_blank">Emanuel Saramago</a></bwc-col>
+      </bwc-row>
     </footer>
 
     <script type="module">

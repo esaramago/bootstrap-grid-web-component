@@ -25,8 +25,8 @@ import '/node_modules/bootstrap-grid-webcomponents/dist/bootstrap-grid-webcompon
 
 ## Using the web components:
 ```
-<bs-row>
-  <bs-col>1 of 2</bs-col>
-  <bs-col>2 of 2</bs-col>
-</bs-row>
+<bwc-row>
+  <bwc-col>1 of 2</bwc-col>
+  <bwc-col>2 of 2</bwc-col>
+</bwc-row>
 ```

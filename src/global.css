@@ -1,18 +1,18 @@
 ﻿:root {
   /* BGWC */
-  --bgwc-grid-columns: 12;
+  --bwc-grid-columns: 12;
 
-  --bgwc-gutter-xs: 0;
-  --bgwc-gutter-sm: 0.25rem;
-  --bgwc-gutter-md: 0.5rem;
-  --bgwc-gutter-lg: 1rem;
-  --bgwc-gutter-xl: 1.5rem;
-  --bgwc-gutter-xxl: 3rem;
+  --bwc-gutter-xs: 0;
+  --bwc-gutter-sm: 0.25rem;
+  --bwc-gutter-md: 0.5rem;
+  --bwc-gutter-lg: 1rem;
+  --bwc-gutter-xl: 1.5rem;
+  --bwc-gutter-xxl: 3rem;
 
-  --bgwc-breakpoint-xs: 0;
-  --bgwc-breakpoint-sm: 576px;
-  --bgwc-breakpoint-md: 768px;
-  --bgwc-breakpoint-lg: 992px;
-  --bgwc-breakpoint-xl: 1200px;
-  --bgwc-breakpoint-xxl: 1400px;
+  --bwc-breakpoint-xs: 0;
+  --bwc-breakpoint-sm: 576px;
+  --bwc-breakpoint-md: 768px;
+  --bwc-breakpoint-lg: 992px;
+  --bwc-breakpoint-xl: 1200px;
+  --bwc-breakpoint-xxl: 1400px;
 }

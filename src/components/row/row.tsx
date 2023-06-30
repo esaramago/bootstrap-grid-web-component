@@ -1,12 +1,12 @@
 ﻿import { Component, h, Host } from '@stencil/core'
 
 @Component({
-  tag: 'bs-row',
+  tag: 'bwc-row',
   styleUrl: './row.scss',
   shadow: false
 })
 
-export class BSRow {
+export class BWCRow {
   render() {
     return (
       <Host>

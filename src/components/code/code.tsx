@@ -41,7 +41,7 @@ export class BSWCCode {
       <div class={'code ' + (this.hasExample ? 'code--example' : '')}>
         <h5 class="code__title">{this.language}</h5>
         {code.map(tag => {
-          return <pre><code>{tag.includes('bs-row') ? tag : '  ' + tag}</code>
+          return <pre><code>{tag.includes('bwc-row') ? tag : '  ' + tag}</code>
           </pre>
         })}
       </div>

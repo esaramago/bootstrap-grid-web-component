@@ -1,35 +1,35 @@
 $grid-columns: 12;
 
 $media-queries: (
-  "xs": var(--bgwc-breakpoint-xs),
-  "sm": var(--bgwc-breakpoint-sm),
-  "md": var(--bgwc-breakpoint-md),
-  "lg": var(--bgwc-breakpoint-lg),
-  "xl": var(--bgwc-breakpoint-xl),
-  "xxl": var(--bgwc-breakpoint-xxl)
+  "xs": var(--bwc-breakpoint-xs),
+  "sm": var(--bwc-breakpoint-sm),
+  "md": var(--bwc-breakpoint-md),
+  "lg": var(--bwc-breakpoint-lg),
+  "xl": var(--bwc-breakpoint-xl),
+  "xxl": var(--bwc-breakpoint-xxl)
 );
 $gutters: (
-  0: var(--bgwc-gutter-xs),
-  1: var(--bgwc-gutter-sm),
-  2: var(--bgwc-gutter-md),
-  3: var(--bgwc-gutter-lg),
-  4: var(--bgwc-gutter-xl),
-  5: var(--bgwc-gutter-xxl)
+  0: var(--bwc-gutter-xs),
+  1: var(--bwc-gutter-sm),
+  2: var(--bwc-gutter-md),
+  3: var(--bwc-gutter-lg),
+  4: var(--bwc-gutter-xl),
+  5: var(--bwc-gutter-xxl)
 );
 
 @mixin create-columns($col) {
   width: calc(100% / $col);
 }
 @mixin create-offsets($col) {
-  margin-left: calc((100%/var(--bgwc-grid-columns)) * $col);
+  margin-left: calc((100%/var(--bwc-grid-columns)) * $col);
 }
 @mixin create-gutters($size, $axis) {
   --bs-gutter-#{$axis}: #{$size};
 }
 
-bs-row {
-  --bs-gutter-x: 1.5rem;
+bwc-row {
   --bs-gutter-y: 0;
+  --bs-gutter-x: var(--bwc-gutter-md);
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--bs-gutter-y));
