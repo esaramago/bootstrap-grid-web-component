@@ -19,8 +19,8 @@ import '/node_modules/bootstrap-grid-webcomponents/dist/bootstrap-grid-webcompon
 
 ### Via CDN
 ```
-<script type="module" src="https://unpkg.com/bootstrap-grid-webcomponents@0.1.3/dist/bootstrap-grid-webcomponents/bootstrap-grid-webcomponents.esm.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/bootstrap-grid-webcomponents@0.4.0/dist/bootstrap-grid-webcomponents/bootstrap-grid-webcomponents.css">
+<script type="module" src="https://unpkg.com/bootstrap-grid-webcomponents@latest/dist/bootstrap-grid-webcomponents/bootstrap-grid-webcomponents.esm.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/bootstrap-grid-webcomponents@latest/dist/bootstrap-grid-webcomponents/bootstrap-grid-webcomponents.css">
 ```
 
 ## Using the web components:
