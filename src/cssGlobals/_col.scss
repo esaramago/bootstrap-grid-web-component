@@ -5,13 +5,16 @@
 
 bwc-col {
   --bwc-grid-columns: 12;
-  flex: 1 0 0%;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
 
   &[col] {
-    flex: 0 0 auto;
-  }
-  &[col="auto"] {
-    width: auto;
+    flex: 1 0 0%;
   }
   @for $i from 1 through $grid-columns {
     &[col="#{$i}"] {
@@ -23,6 +26,22 @@ bwc-col {
       @for $i from 1 through $grid-columns {
         &[col-#{$mq}="#{$i}"] {
           @include create-columns($i)
+        }
+      }
+    }
+  }
+
+  // auto
+  &[col="auto"] {
+    flex: 0 0 auto;
+    width: auto;
+  }
+  @each $mq, $size in $media-queries {
+    @media (min-width: $size) {
+      @for $i from 1 through $grid-columns {
+        &[col-#{$mq}="auto"] {
+          flex: 0 0 auto;
+          width: auto;
         }
       }
     }

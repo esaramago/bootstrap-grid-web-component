@@ -62,7 +62,7 @@
         <h4>Installing via NPM:</h4>
 
         <bswc-code language="Terminal">
-          npm install bootstrap-grid-webcomponents -save
+          npm install bootstrap-grid-webcomponents --save
         </bswc-code>
 
         <bswc-code language="Javascript">
@@ -73,16 +73,16 @@ import '/node_modules/bootstrap-grid-webcomponents/dist/bootstrap-grid-webcompon
         <h4>Installing via CDN</h4>
 
         <bswc-code>
-          <script type="module" src="https://unpkg.com/bootstrap-grid-webcomponents@latest/dist/bootstrap-grid-webcomponents/bootstrap-grid-webcomponents.esm.js"></script>
-          <link rel="stylesheet" href="https://unpkg.com/bootstrap-grid-webcomponents@latest/dist/bootstrap-grid-webcomponents/bootstrap-grid-webcomponents.css">
+          <\script type="module" src="https://unpkg.com/bootstrap-grid-webcomponents@latest/dist/bootstrap-grid-webcomponents/bootstrap-grid-webcomponents.esm.js"></>
+          <\link rel="stylesheet" href="https://unpkg.com/bootstrap-grid-webcomponents@latest/dist/bootstrap-grid-webcomponents/bootstrap-grid-webcomponents.css">
         </bswc-code>
 
         <h3>Using the web components:</h3>
 
         <bswc-code>
           <bwc-row>
-            <bwc-col>1 of 2</bwc-col>
-            <bwc-col>2 of 2</bwc-col>
+            <bwc-col col>1 of 2</bwc-col>
+            <bwc-col col>2 of 2</bwc-col>
           </bwc-row>
         </bswc-code>
       </section>
@@ -100,13 +100,13 @@ import '/node_modules/bootstrap-grid-webcomponents/dist/bootstrap-grid-webcompon
           slug="equal-width"
         >
           <bwc-row>
-            <bwc-col>1 of 2</bwc-col>
-            <bwc-col>2 of 2</bwc-col>
+            <bwc-col col>1 of 2</bwc-col>
+            <bwc-col col>2 of 2</bwc-col>
           </bwc-row>
           <bwc-row>
-            <bwc-col>1 of 3</bwc-col>
-            <bwc-col>2 of 3</bwc-col>
-            <bwc-col>3 of 3</bwc-col>
+            <bwc-col col>1 of 3</bwc-col>
+            <bwc-col col>2 of 3</bwc-col>
+            <bwc-col col>3 of 3</bwc-col>
           </bwc-row>
         </bswc-section>
 
@@ -115,14 +115,14 @@ import '/node_modules/bootstrap-grid-webcomponents/dist/bootstrap-grid-webcompon
           slug="setting-one-column-width"
         >
           <bwc-row>
-            <bwc-col>1 of 3</bwc-col>
+            <bwc-col col>1 of 3</bwc-col>
             <bwc-col col="6">2 of 3 (wider)</bwc-col>
-            <bwc-col>3 of 3</bwc-col>
+            <bwc-col col>3 of 3</bwc-col>
           </bwc-row>
           <bwc-row>
-            <bwc-col>1 of 3</bwc-col>
+            <bwc-col col>1 of 3</bwc-col>
             <bwc-col col="5">2 of 3 (wider)</bwc-col>
-            <bwc-col>3 of 3</bwc-col>
+            <bwc-col col>3 of 3</bwc-col>
           </bwc-row>
         </bswc-section>
 
@@ -131,9 +131,9 @@ import '/node_modules/bootstrap-grid-webcomponents/dist/bootstrap-grid-webcompon
           slug="variable-width-content"
         >
           <bwc-row>
-            <bwc-col>1 of 3</bwc-col>
+            <bwc-col col>1 of 3</bwc-col>
             <bwc-col col="auto">Variable with content</bwc-col>
-            <bwc-col>3 of 3</bwc-col>
+            <bwc-col col>3 of 3</bwc-col>
           </bwc-row>
           <bwc-row>
             <bwc-col col="auto">This column has the size of its content</bwc-col>
@@ -146,10 +146,10 @@ import '/node_modules/bootstrap-grid-webcomponents/dist/bootstrap-grid-webcompon
           slug="all-breakpoints"
         >
           <bwc-row>
-            <bwc-col>col</bwc-col>
-            <bwc-col>col</bwc-col>
-            <bwc-col>col</bwc-col>
-            <bwc-col>col</bwc-col>
+            <bwc-col col>col</bwc-col>
+            <bwc-col col>col</bwc-col>
+            <bwc-col col>col</bwc-col>
+            <bwc-col col>col</bwc-col>
           </bwc-row>
           <bwc-row>
             <bwc-col col="8">col-8</bwc-col>
@@ -165,10 +165,10 @@ import '/node_modules/bootstrap-grid-webcomponents/dist/bootstrap-grid-webcompon
           slug="row-columns"
         >
           <bwc-row cols="3">
-            <bwc-col>1 of 4</bwc-col>
-            <bwc-col>2 of 4</bwc-col>
-            <bwc-col>3 of 4</bwc-col>
-            <bwc-col>4 of 4</bwc-col>
+            <bwc-col col>1 of 4</bwc-col>
+            <bwc-col col>2 of 4</bwc-col>
+            <bwc-col col>3 of 4</bwc-col>
+            <bwc-col col>4 of 4</bwc-col>
           </bwc-row>
         </bswc-section>
 
@@ -199,11 +199,11 @@ import '/node_modules/bootstrap-grid-webcomponents/dist/bootstrap-grid-webcompon
           heading="Offset"
         >
           <bwc-row offset="3">
-            <bwc-col>1 of 2</bwc-col>
-            <bwc-col>2 of 2</bwc-col>
+            <bwc-col col>1 of 2</bwc-col>
+            <bwc-col col>2 of 2</bwc-col>
           </bwc-row>
           <bwc-row offset="6">
-            <bwc-col>Half</bwc-col>
+            <bwc-col col>Half</bwc-col>
           </bwc-row>
         </bswc-section>
 
@@ -211,9 +211,9 @@ import '/node_modules/bootstrap-grid-webcomponents/dist/bootstrap-grid-webcompon
           heading="Direction"
         >
           <bwc-row flex="reverse">
-            <bwc-col>1 of 3</bwc-col>
-            <bwc-col>2 of 3</bwc-col>
-            <bwc-col>3 of 3</bwc-col>
+            <bwc-col col>1 of 3</bwc-col>
+            <bwc-col col>2 of 3</bwc-col>
+            <bwc-col col>3 of 3</bwc-col>
           </bwc-row>
         </bswc-section>
 
