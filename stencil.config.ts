@@ -12,6 +12,7 @@ export const config: Config = {
   outputTargets: [
     {
       type: 'dist',
+      esmLoaderPath: '../loader',
     },
 
     // Website
@@ -28,6 +29,13 @@ export const config: Config = {
           src: 'css',
         },
       ]
+    },
+    {
+      type: 'docs-readme',
+    },
+    {
+      type: 'www',
+      serviceWorker: null, // disable service workers
     },
   ],
   globalStyle: 'src/cssGlobals/global.scss',
