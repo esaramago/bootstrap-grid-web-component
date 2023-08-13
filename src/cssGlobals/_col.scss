@@ -23,11 +23,14 @@ bwc-col {
     }
   }
   @each $mq, $size in $media-queries {
-    @media (min-width: $size) {
+    @media (max-width: $size) {
       @for $i from 1 through $grid-columns {
         &[col-#{$mq}="#{$i}"] {
           @include create-columns($i)
         }
+      }
+      &[col-#{$mq}] {
+        flex: 0 0 auto;
       }
     }
   }
