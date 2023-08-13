@@ -13,7 +13,8 @@ bwc-col {
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-top: var(--bs-gutter-y);
 
-  &[col] {
+  &[col],
+  &:not([col]) {
     flex: 1 0 0%;
   }
   @for $i from 1 through $grid-columns {
