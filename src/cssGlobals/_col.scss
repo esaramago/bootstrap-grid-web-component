@@ -17,6 +17,11 @@ bwc-col {
   &:not([col]) {
     flex: 1 0 0%;
   }
+  &[col="auto"] {
+    flex: 0 0 auto;
+    width: auto;
+  }
+
   @for $i from 1 through $grid-columns {
     &[col="#{$i}"] {
       @include create-columns($i)
@@ -31,15 +36,11 @@ bwc-col {
       }
       &[col-#{$mq}] {
         flex: 0 0 auto;
+        width: 100%;
       }
     }
   }
 
-  // auto
-  &[col="auto"] {
-    flex: 0 0 auto;
-    width: auto;
-  }
   @each $mq, $size in $media-queries {
     @media (min-width: $size) {
       @for $i from 1 through $grid-columns {
